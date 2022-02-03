@@ -11,6 +11,7 @@ def seed():
     if request.method == 'POST':
         with open('s', 'w') as fl:
             fl.write(str(request.get_json()['num']))
+        return ''
     else:
         with open('s') as fl:
             seed = fl.read()
