@@ -1,6 +1,11 @@
 from flask import Flask, request
 app = Flask(__name__)
 
+with open('s', 'w') as fl:
+    fl.write(' ')
+
+seed = ''
+
 @app.route('/',methods = ['POST', 'GET'])
 def seed():
     if request.method == 'POST':
