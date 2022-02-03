@@ -8,7 +8,7 @@ def seed():
             fl.write(request.get_json()['num'])
     else:
         with open('s') as fl:
-            seed = int(fl.read())
+            seed = fl.read()
         return seed
     
 if __name__ == '__main__':
