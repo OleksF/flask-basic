@@ -10,7 +10,7 @@ seed = ''
 def seed():
     if request.method == 'POST':
         with open('s', 'w') as fl:
-            fl.write(request.get_json()['num'])
+            fl.write(str(request.get_json()['num']))
     else:
         with open('s') as fl:
             seed = fl.read()
